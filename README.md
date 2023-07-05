@@ -15,8 +15,8 @@
 # USER Default
 
 ```
-1. email: default@app.com
-1. password: password
+email: default@app.com
+password: password
 ```
 
 # API Spec
