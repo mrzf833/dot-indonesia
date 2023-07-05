@@ -25,6 +25,11 @@ password: password
 # Testing Command
 - `php artisan test`
 
+# Swapable Implementation DB atau rajaongkir
+```
+setting di .env yang di key SWAP_RAJAONGKIR_OR_DB dan diisi dengan rajaongkir ATAU db
+```
+
 # API Spec
 
 ## Add Header
