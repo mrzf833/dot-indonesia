@@ -19,6 +19,9 @@ email: default@app.com
 password: password
 ```
 
+# Testing Command
+- `php artisan test`
+
 # API Spec
 
 ## Add Header
