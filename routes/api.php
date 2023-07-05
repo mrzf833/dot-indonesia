@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CityController;
 use App\Http\Controllers\Api\ProvinceController;
 use Illuminate\Http\Request;
@@ -20,6 +21,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['prefix' => '/auth', 'as' => 'auth.'], function(){
+    Route::post('/login', [AuthController::class, 'login'])->name('login');
+    Route::post('/register', [AuthController::class, 'register'])->name('register');
+});
 
-Route::get('/search/provinces', [ProvinceController::class, 'search']);
-Route::get('/search/city', [CityController::class, 'search']);
+Route::group(['middleware' => 'auth:sanctum'], function(){
+    Route::group(['prefix' => '/auth', 'as' => 'auth.'], function(){
+        Route::get('/user', [AuthController::class, 'user'])->name('user');
+        Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    });
+
+    Route::get('/search/provinces', [ProvinceController::class, 'search']);
+    Route::get('/search/city', [CityController::class, 'search']);
+});
