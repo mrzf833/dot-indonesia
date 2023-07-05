@@ -52,19 +52,26 @@ Response :
 
 Request :
 - Method : POST
-- Endpoint : `/api/login`
+- Endpoint : `/api/auth/register`
 - Body : 
 
     ```json
     {
-        "username" : "required",
-        "password" : "required"
+        "name": "default2",
+        "email": "default2@app.com",
+        "password": "password"
     }
     ```
 
 Response :
 ```json
 {
-    "message": "user berhasil di buat"
+    "data": {
+        "name": "default2",
+        "email": "default2@app.com",
+        "updated_at": "2023-07-05T17:00:24.000000Z",
+        "created_at": "2023-07-05T17:00:24.000000Z",
+        "id": 2
+    }
 }
 ```
