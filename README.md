@@ -25,7 +25,6 @@ password: password
 - Content-Type : "application/json"
 - Accept : "application/json"
 
-
 ## No Authentication
 
 ## Login
@@ -46,7 +45,7 @@ Response :
 ```json
 {
     "data": {
-        "token": "secret token"
+        "token": "secret api key"
     }
 }
 ```
@@ -79,30 +78,25 @@ Response :
 }
 ```
 
+## Add Authentication Header
+- Authorization : "Bearer " + "your secret api key"
+
 ## With Authentication
 
 Request :
-- Method : POST
-- Endpoint : `/api/auth/register`
-- Body : 
-
-    ```json
-    {
-        "name": "default2",
-        "email": "default2@app.com",
-        "password": "password"
-    }
-    ```
+- Method : GET
+- Endpoint : `/api/auth/user`
 
 Response :
 ```json
 {
     "data": {
-        "name": "default2",
-        "email": "default2@app.com",
-        "updated_at": "2023-07-05T17:00:24.000000Z",
-        "created_at": "2023-07-05T17:00:24.000000Z",
-        "id": 2
+        "id": 1,
+        "name": "Default User",
+        "email": "default@app.com",
+        "email_verified_at": "2023-07-05T11:57:38.000000Z",
+        "created_at": "2023-07-05T11:57:38.000000Z",
+        "updated_at": "2023-07-05T11:57:38.000000Z"
     }
 }
 ```
