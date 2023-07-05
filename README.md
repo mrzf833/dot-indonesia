@@ -101,3 +101,15 @@ Response :
     }
 }
 ```
+
+## Logout
+Request :
+- Method : POST
+- Endpoint : `/api/auth/logout`
+
+Response :
+```json
+{
+    "message": "user berhasil logout"
+}
+```
