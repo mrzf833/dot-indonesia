@@ -32,6 +32,6 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
         Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     });
 
-    Route::get('/search/provinces', [ProvinceController::class, 'search']);
-    Route::get('/search/city', [CityController::class, 'search']);
+    Route::get('/search/provinces', [ProvinceController::class, 'search'])->name('search.provinces');
+    Route::get('/search/city', [CityController::class, 'search'])->name('search.city');
 });
