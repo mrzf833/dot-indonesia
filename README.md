@@ -17,6 +17,7 @@
 ```
 1. email: default@app.com
 1. password: password
+```
 
 # API Spec
 
