@@ -78,11 +78,12 @@ Response :
 }
 ```
 
+# With Authentication
+
 ## Add Authentication Header
 - Authorization : "Bearer " + "your secret api key"
 
-## With Authentication
-
+## User
 Request :
 - Method : GET
 - Endpoint : `/api/auth/user`
