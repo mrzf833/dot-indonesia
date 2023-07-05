@@ -23,6 +23,9 @@
 - `composer install`
 - `php artisan key:generate`
 - `php artisan migrate:fresh --seed`
+- `chmod -R 777 /var/www/storage`
+- `chmod -R 777 /var/www/bootstrap/cache`
+
 
 # USER Default
 
