@@ -9,6 +9,7 @@
 - `composer install`
 - `buka dan setting .env nya yaitu`
     - `Sesuaikan Databasenya`
+    - `Sesuaikan rajaongkirnya di paling bawah`
 - `php artisan key:generate`
 - `php artisan migrate:fresh --seed`
 
