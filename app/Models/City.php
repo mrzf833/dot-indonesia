@@ -30,4 +30,9 @@ class City extends Model
     {
         $query->where('city_id', $id);
     }
+
+    public function province()
+    {
+        return $this->belongsTo(Province::class, 'province_id', 'province_id');
+    }
 }
