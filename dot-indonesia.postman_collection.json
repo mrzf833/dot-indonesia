@@ -32,12 +32,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8003/api/search/city?id=1",
-							"protocol": "http",
+							"raw": "{{url}}/api/search/city?id=1",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8003",
 							"path": [
 								"api",
 								"search",
@@ -165,12 +163,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8003/api/search/provinces?id=1",
-							"protocol": "http",
+							"raw": "{{url}}/api/search/provinces?id=1",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "8003",
 							"path": [
 								"api",
 								"search",
@@ -315,7 +311,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"email\": \"default@app.com\",\r\n    \"password\": \"password\"\r\n}"
 						},
-						"url": "http://localhost:8003/api/auth/login"
+						"url": "{{url}}/api/auth/login"
 					},
 					"response": [
 						{
@@ -425,7 +421,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"name\": \"default3\",\r\n    \"email\": \"default3@app.com\",\r\n    \"password\": \"password\"\r\n}"
 						},
-						"url": "http://localhost:8003/api/auth/register"
+						"url": "{{url}}/api/auth/register"
 					},
 					"response": [
 						{
@@ -544,7 +540,7 @@
 							"mode": "raw",
 							"raw": ""
 						},
-						"url": "http://localhost:8003/api/auth/user"
+						"url": "{{url}}/api/auth/user"
 					},
 					"response": [
 						{
@@ -656,7 +652,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:8003/api/auth/logout"
+						"url": "{{url}}/api/auth/logout"
 					},
 					"response": [
 						{
