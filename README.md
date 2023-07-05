@@ -21,6 +21,9 @@ password: password
 
 # API Spec
 
+## Add Header
+- Content-Type : "application/json"
+- Accept : "application/json"
 
 
 ## No Authentication
