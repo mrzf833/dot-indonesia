@@ -29,7 +29,7 @@ password: password
 
 Request :
 - Method : POST
-- Endpoint : `/api/login`
+- Endpoint : `/api/auth/login`
 - Body : 
 
     ```json
