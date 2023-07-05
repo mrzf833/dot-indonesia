@@ -19,6 +19,9 @@ email: default@app.com
 password: password
 ```
 
+# Artisan Command fetching API data provinsi & kota dan data disimpan ke dalam database
+- `php artisan rajaongkir:exec`
+
 # Testing Command
 - `php artisan test`
 
