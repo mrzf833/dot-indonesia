@@ -129,3 +129,23 @@ Response :
     }
 }
 ```
+
+## Search City
+Request :
+- Method : GET
+- Endpoint : `/api/search/city?id={city_id}`
+
+Response :
+```json
+{
+    "message": "OK",
+    "results": {
+        "city_id": "21",
+        "province_id": "18",
+        "type": "Kota",
+        "city_name": "Bandar Lampung",
+        "postal_code": "35139",
+        "province": "Lampung"
+    }
+}
+```
