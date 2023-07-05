@@ -34,17 +34,18 @@ Request :
 
     ```json
     {
-        "data": {
-            "token": "4|diAR8hXp1HFkXxLSq4jwJA6I0OHoS7KGO3NC5n7g"
-        }
+        "email": "default@app.com",
+        "password": "password"
     }
     ```
 
 Response :
 ```json
-    {
-        "token" : "secret api key"
+{
+    "data": {
+        "token": "secret token"
     }
+}
 ```
 
 ## Register
