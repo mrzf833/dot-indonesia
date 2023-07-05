@@ -113,3 +113,19 @@ Response :
     "message": "user berhasil logout"
 }
 ```
+
+## Search Province
+Request :
+- Method : GET
+- Endpoint : `/api/search/provinces?id={province_id}`
+
+Response :
+```json
+{
+    "message": "OK",
+    "results": {
+        "province_id": "21",
+        "province": "Nanggroe Aceh Darussalam (NAD)"
+    }
+}
+```
