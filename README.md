@@ -34,16 +34,17 @@ Request :
 
     ```json
     {
-        "username" : "required",
-        "password" : "required"
+        "data": {
+            "token": "4|diAR8hXp1HFkXxLSq4jwJA6I0OHoS7KGO3NC5n7g"
+        }
     }
     ```
 
 Response :
 ```json
-{
-    "token" : "secret api key"
-}
+    {
+        "token" : "secret api key"
+    }
 ```
 
 ## Register
