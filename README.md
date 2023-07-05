@@ -2,7 +2,7 @@
 
 ## Dibuat Menggunakan Laravel 8 dan php 8.1.10
 
-# Cara Pemasangan
+# Cara Pemasangan Manual
 
 ## Clone Source Code Ini, Lalu Jalankan
 
@@ -10,6 +10,17 @@
 - `buka dan setting .env nya yaitu`
     - `Sesuaikan Databasenya`
     - `Sesuaikan rajaongkirnya di paling bawah`
+- `php artisan key:generate`
+- `php artisan migrate:fresh --seed`
+
+# Cara Pemasangan Dengan Docker
+- `buka dan setting .env nya yaitu`
+    - `Sesuaikan Databasenya`
+    - `Sesuaikan rajaongkirnya di paling bawah`
+- `docker-compose build app`
+- `docker-compose up -d`
+- `docker-compose exec -u root -it app /bin/sh`
+- `composer install`
 - `php artisan key:generate`
 - `php artisan migrate:fresh --seed`
 
